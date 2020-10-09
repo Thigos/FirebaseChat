@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FirebaseChat</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark" style="margin-bottom:15px;width: 100%;position: fixed;top: 0;">
+        <a class="navbar-brand" id="nmUser" href="#">
+            <img src="img/person.png" id="ftPerfil" width="48px" height="48px" class="logo d-inline-block align-top rounded-circle"
+                alt="">
+
+        </a>
+        <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 strong">
+
+                <li class="nav-item active">
+                    <a class="nav-link" id="trocarPerfil" style="cursor: pointer;" >Trocar Foto</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" id="sair" href="#">Sair</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div id="msgCX" style="margin-bottom: 80px;margin-top: 80px;"></div>
+
+    <form onsubmit="return false">
+        <div class="divMsg" id="divMsg">
+            <input class="inputMsg" id="inputMsg" type="text" placeholder="Digite Aqui...">
+            <button id="btEnviar" class="btEnviar" title="Enviar">OK</button>
+            <img src="img/pasta.png" class="file" title="Enviar Arquivo" id="btFileUpload">
+        </div>
+    </form>
+
+    <dialog id="dialogFileUp" style="background-color: rgb(170, 78, 2);border:none;">
+        <h1 style="color: white;text-align: center;" id="textFileUp">Envie Seu Arquivo</h1>
+        <br>
+
+        <input type="file" id="inputFileUp" style="color: white;text-align: center;">
+        <br>
+        <div id="cxProgressBar"
+            style="background-color: #2b2b2b;margin-top: 10px;border-radius: 30px;visibility: hidden;">
+            <div id="progressBar"
+                style="background-color: rgb(270, 78, 2);text-align: center;color: white;border-radius: 30px;"></div>
+        </div>
+        <h1 style="color: white;cursor: pointer;text-align: center;" id="backFileUp">&lt;&lt;&lt;</h1>
+    </dialog>
+
+    <dialog id="dialogFtPerfil" style="background-color: rgb(170, 78, 2);border:none;">
+        <h1 style="color: white;text-align: center;">Envie Sua Imagem</h1>
+        <br>
+        <div style="display: flex;">
+            <input type="file" id="enviarFt" accept="image/png, image/jpeg" style="color: white;text-align: center;">
+            <img src="img/person.png" id="ftDialog"
+                style="border-radius: 50%; width: 190px; height: 190px; margin-left: 20px;">
+        </div>
+        <br>
+        <h1 style="color: white;cursor: pointer;text-align: center;" id="back">&lt;&lt;&lt;</h1>
+    </dialog>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/principal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FirebaseChat</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--CONTAINER-->
+    <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center w-100"
+            style="background-color: #151515;border-radius: 33px;height:65%">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center;">
+                <h3 style="margin-top: 20px;">Login</h3>
+                <!--Parte Do Login-->
+                <form onsubmit="return false">
+                    <input class="inputStyle" placeholder="Email" required id="lgEmail">
+                    <br>
+                    <input type="password" class="inputStyle" placeholder="Senha" required id="lgSenha">
+                    <br>
+                    <button class="btLG" id="btLG">GO!</button>
+                </form>
+                <p style="color: white;font-style: italic;cursor: pointer;" id="btRecSenha"><u>Recuperar Senha</u></p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="background-color: orangered;border-radius: 33px;text-align: center;">
+                <h3 style="margin-top: 20px;">Registro</h3>
+                <!--Parte Do Registro-->
+                <form onsubmit="return false">
+                    <input type="text" class="inputStyle" placeholder="Nome" required id="rgNome">
+                    <br>
+                    <input type="email" class="inputStyle" placeholder="Email" required id="rgEmail">
+                    <br>
+                    <input type="password" class="inputStyle" placeholder="Senha" required id="rgSenha">
+                    <br>
+                    <button class="btRG" id="btRG">GO!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--CARREGAR SCRIPTS DO FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

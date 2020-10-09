@@ -1,0 +1,47 @@
+body{
+    background-color: #1c1c1c;
+}
+h3,p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inputStyle{
+    margin-top: 20px;
+    height: 32px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+}
+.btLG{
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    height: 90px;
+    transition: 500ms;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 90px;
+}
+.btLG:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btRG{
+    background-color: #d67526;
+    color: white;
+    text-align: center;
+    height: 90px;
+    font-weight: bold;
+    border: none;
+    transition: 500ms;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 90px;
+}
+.btRG:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
