@@ -102,7 +102,7 @@ function login() {
                     alert("Email Inválido");
                 }
                 if (error.code == "auth/user-disabled") {
-                    alert("Usuário Disabilitado");
+                    alert("Usuário Desabilitado");
                 };
                 if (error.code == "auth/user-not-found") {
                     alert("Usuário Não Cadastrado");
